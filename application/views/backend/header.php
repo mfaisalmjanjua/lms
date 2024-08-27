@@ -13,7 +13,7 @@
 
         <ul class="list-unstyled topbar-right-menu float-right mb-0">
 
-            <li class="dropdown notification-list topbar-dropdown">
+            <li class="dropdown notification-list topbar-dropdown d-none">
                 <a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                     <span class="align-middle text-18"><i class="fas fa-language"></i></span> <i class="mdi mdi-chevron-down"></i>
                 </a>
