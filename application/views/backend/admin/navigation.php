@@ -251,7 +251,7 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 			$CI->load->model('addons/affiliate_course_model');
 
 		?>
-			<li class="side-nav-item <?php if ($page_name == 'active_affiliator' || $page_name == 'suspend_affiliator' || $page_name == 'pending_affiliator' || $page_name == 'course_affiliation_history' || $page_name == 'affiliation_course_payouts' || $page_name == 'affiliator_add' || $page_name == 'affiliate_addon_settings') : ?> active <?php endif; ?>">
+			<li class="side-nav-item d-none <?php if ($page_name == 'active_affiliator' || $page_name == 'suspend_affiliator' || $page_name == 'pending_affiliator' || $page_name == 'course_affiliation_history' || $page_name == 'affiliation_course_payouts' || $page_name == 'affiliator_add' || $page_name == 'affiliate_addon_settings') : ?> active <?php endif; ?>">
 				<a href="javascript: void(0);" class="side-nav-link <?php if ($page_name == 'active_affiliator' || $page_name == 'suspend_affiliator' || $page_name == 'pending_affiliator' || $page_name == 'course_affiliation_history' || $page_name == 'affiliation_course_payouts' || $page_name == 'affiliator_add' || $page_name == 'affiliate_addon_settings') : ?> active <?php endif; ?>">
 					<i class="dripicons-box"></i>
 					<span> <?php echo get_phrase('Affiliate'); ?> </span>
