@@ -23,7 +23,7 @@
                     foreach ($languages as $language) : ?>
                         <?php if (trim($language) != "" && $this->session->userdata('language') != strtolower($language)) : ?>
                             <a href="javascript:void(0);" onclick="switch_language('<?php echo strtolower($language); ?>')" class="dropdown-item notify-item">
-                                <span class="align-middle"><?php echo ucwords($language); ?></span>
+                                <span class="align-middle"><?php echo ucwords($la   nguage); ?></span>
                             </a>
                         <?php endif; ?>
                     <?php endforeach; ?>

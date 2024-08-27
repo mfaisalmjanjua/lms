@@ -197,7 +197,7 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 
 
 		<?php if (addon_status('customer_support')) : ?>
-			<li class="side-nav-item <?php if ($page_name == 'tickets' || $page_name == 'create_ticket') : ?> active <?php endif; ?>">
+			<li class="side-nav-item d-none <?php if ($page_name == 'tickets' || $page_name == 'create_ticket') : ?> active <?php endif; ?>">
 				<a href="javascript: void(0);" class="side-nav-link">
 					<i class="dripicons-help"></i>
 					<span> <?php echo get_phrase('support'); ?> </span>
@@ -222,28 +222,28 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 
 			if ($x == 0  && get_settings('affiliate_addon_active_status')==1) : ?>
 
-				<li class="side-nav-item">
+				<li class="side-nav-item d-none">
 					<a href="<?php echo site_url('addons/affiliate_course/become_an_affiliator'); ?>" class="side-nav-link <?php if ($page_name == 'become_an_affiliator') echo 'active'; ?>">
 						<i class="dripicons-archive"></i>
 						<span><?php echo get_phrase('become_an_affiliator'); ?></span>
 					</a>
 				</li>
 			<?php elseif($x==1) : ?>
-				<li class="side-nav-item">
+				<li class="side-nav-item d-none">
 					<a href="<?php echo site_url('addons/affiliate_course/become_an_affiliator'); ?>" class="side-nav-link <?php if ($page_name == 'become_an_affiliator') echo 'active'; ?>">
 						<i class="dripicons-archive"></i>
 						<span><?php echo get_phrase('Affiliation Status'); ?></span>
 					</a>
 				</li>
 
-				<li class="side-nav-item">
+				<li class="side-nav-item d-none">
 					<a href="<?php echo site_url('addons/affiliate_course/affiliate_course_history '); ?>" class="side-nav-link <?php if ($page_name == 'become_an_affiliator')  ?>">
 						<i class="dripicons-archive"></i>
 						<span><?php echo get_phrase('Affiliation History'); ?></span>
 					</a>
 				</li>
 				<?php elseif($x==2): ?>
-					<li class="side-nav-item">
+					<li class="side-nav-item d-none">
 					<a href="<?php echo site_url('addons/affiliate_course/become_an_affiliator'); ?>" class="side-nav-link <?php if ($page_name == 'become_an_affiliator') echo 'active'; ?>">
 						<i class="dripicons-archive"></i>
 						<span><?php echo get_phrase('Affiliation Status'); ?></span>
